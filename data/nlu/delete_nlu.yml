@@ -1,0 +1,20 @@
+version: "2.0"
+
+nlu:
+- intent: delete_sale_order
+  examples: |
+    - Delete sales order
+    - Get rid of sales order [SO192837](sale_order_id)
+    - Remove sale order
+    - Delete sales orders [sold to](field) [10C1002](customer_id)
+    - Delete sales orders [billed to](field) customer [17C2828](customer_id)
+    - Remove sales order [SO192283](sale_order_id)
+    - Delete sales order for [13C0120](customer_id)
+
+- intent: delete_action_request
+  examples: |
+    - Delete action request
+    - Get rid of action request [AR192732](action_request_id)
+    - Remove action requests for [customer](contact_type) [19C3737](customer_id)
+    - Delete action request [AR200122](action_request_id)
+    - Throw away action requests for [customer](contact_type) [12C1002](customer_id)

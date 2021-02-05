@@ -1,0 +1,47 @@
+version: "2.0"
+
+nlu:
+- intent: read_action_request
+  examples: |
+    - Open action request
+    - Open action request [AR000000](action_request_id)
+    - Open action request [AR111111](action_request_id)
+    - Read action request [AR192222](action_request_id)
+    - Display action request [AR789789](action_request_id)
+    - Read action request
+    - Find action request
+    - Display action requests
+    - Show me action request [AR175638](action_request_id)
+    - Find action request [AR175228](action_request_id)
+    - Show me action requests for [crm account](contact_type) [10C1900](customer_id)
+    - Show action requests for [customer](contact_type) [10C1900](customer_id)
+    - Display action requests for [engineer](contact_type) [10C1900](customer_id)
+    - Show action requests for [supplier](contact_type) [88C8888](customer_id)
+
+- intent: read_inventory_detail
+  examples: |
+    - Open inventory detail
+    - Find inventory detail for [item](field) [01010](number)
+    - Find inventory detail
+    - Show inventory detail for [item](field) [03011](number)
+    - Read inventory detail for [item](field) [01010](number)
+    - Find inventory detail for [01010](number)
+    - Inventory detail for [02011](number)
+    - Show me inventory detail
+    - Show me inventory detail for item [item](field) [01010](number)
+    - Display inventory detail for item [item](field) [03110](number)
+
+- intent: read_sale_order
+  examples: |
+    - Open sales order [SO192837](sale_order_id)
+    - Open sale order
+    - Sales orders
+    - Show me sales orders
+    - Read sales orders
+    - Show me sales order [shipped to](field) [12C1919](customer_id)
+    - Show sales order [SO122237](sale_order_id)
+    - Display sales order [SO195557](sale_order_id)
+    - Open sales order [SO278881](sale_order_id)
+    - Open sales orders from last month
+    - Show me sales orders from last April
+    - Show sales orders from August to November

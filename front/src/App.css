@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poiret+One&display=swap');
+
+:root {
+  --logo-font: 'Montserrat', sans-serif;
+  --header-font: 'Montserrat', sans-serif;
+  --core-font: "Merriweather Sans", sans-serif;
+
+  --ui-shawdow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+  fill: rgba(0, 0, 0, 0.54);
+  --ui-shawdow-border: 2px solid #d1d1d16c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background-color: #0e1116;
+}
+
+
+h1 {
+  font-family: var(--header-font);
+  padding: 0;
+  margin: 10px 15px 10px 15px;
+  color: #f1f6fb;
+
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float:right;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+}
+
+.command {
+  margin-top: 50px;
+  font-size: 30px;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  z-index: 1;
+}
+
+.View {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  /*background: url("food.jpg") left bottom;*/
+  background-color: #0e1116;
+  background-size: cover;
+
+  font-family: var(--core-font);
+
+}
+
+.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  background: #171b21;
+  padding: 5px;
+  color: #f1f6fb;
+  z-index: 1;
+
+  font-family: var(--logo-font);
+}
+
+.QAD {
+  color: #6495ED;
+}
+
+.background {
+  height: 1100px;
+  width: 1900px;
+  position: fixed;
+  z-index: 0;
+  outline: none;
+}
+
+canvas {
+  z-index: 0 !important;
+  mask-image: url(./bg.png);
+  mask-size: 100%, 50%;
+  mask-repeat: no-repeat;
+}
+
+.chatroom {
+  height: 500px;
+  width: 300px;
+  box-shadow: 10px;
+  margin-top: 30px;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  z-index: 1;
+  opacity: 95%;
+}
+
+.speech-button {
+  margin-top: 30px;
+  position: relative;
+  font-size: 30px;
+  color: white;
+  background-color: #0e1116;
+  padding-top: 5px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: 1px solid grey;
+  outline: none;
+  position:relative;
+  left:40%;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:.95;}
+}
+  
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:.95;}
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:.95;}
+}
+  
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:.95;}
+}
+  
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:.95;}
+}
+
+.rw-client {
+  background-color:  #6495ED !important;
+}
+
+.rw-messages-container {
+  background-color: #171b21 !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.rw-sender {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.rw-response {
+  color: white !important;
+  background-color: #262b34 !important;
+}
+
+.rw-sender {
+  background-color: #262b34 !important;
+}
+
+.rw-new-message {
+  background-color: #262b34 !important;
+  color: white !important;
+}
+
+.rw-send {
+  background-color: #262b34 !important;
+}
+
+.rw-loading {
+  background-color: white !important;
+}
+
