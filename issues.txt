@@ -1,0 +1,12 @@
+* WRITE ALL ISSUES HERE *
+
+{Failing training data}
+- "bill to to" is not being recognized as "bill to"
+    - Example: "Edit [bill to](field) to [88C8888](customer_id) for sales order [SO111199](sale_order_id)"
+
+{Incomplete functionalities}
+- filter type defaulting to 'literal' -> need to handle 'field' type as well
+- 'delete' actions are being redirected to 'read'
+
+{Possible issues}
+- 'customer' is being mapped to 'soldTo'

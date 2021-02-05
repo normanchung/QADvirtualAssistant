@@ -1,0 +1,99 @@
+version: "2.0"
+
+nlu:
+- synonym: soldTo
+  examples: |
+    - sold-to
+    - sold to
+    - selling to
+    - sell to
+    - sold to
+
+- synonym: shipTo
+  examples: |
+    - ship-to
+    - ship to
+    - shipped to
+    - shipping to
+    - shipping to
+    - ship to
+
+- synonym: billTo
+  examples: |
+    - bill-to
+    - bill to
+    - billed to
+    - billing to
+    - bill to
+    - billing to
+    - billed to
+
+- synonym: crm acco
+  examples: |
+    - crm account
+    - CRM Account 
+    - crm acct
+    - crm-account
+    - Crm account
+    - crm
+    - CRM
+    - crm accounts
+
+- synonym: employee
+  examples: |
+    - employee
+    - worker
+    - employ
+
+- synonym: end user
+  examples: |
+    - end user
+    - enduser
+    - end-user
+    - final user
+
+- synonym: engineer
+  examples: |
+    - engineer
+    - engineers
+    - engineering
+
+- synonym: salesper
+  examples: |
+    - salesperson
+    - salespersons
+    - salespsn
+    - saleperson
+    - salepersons
+    - sales person
+    - sales persons
+    - sale person
+    - sale persons
+    - sales people
+    - sale people
+    - sales peoples
+    - sale peoples
+    - salespeople
+    - salepeople
+
+- synonym: supplier
+  examples: |
+    - supplier
+    - supply person
+
+- synonym: item
+  examples: |
+    - items
+    - Item
+
+- regex: customer_id
+  examples: |
+    - \b\d{2}C\d{4}\b
+
+- regex: sale_order_id
+  examples: |
+    - \bSO\d{6}\b
+
+- regex: action_request_id
+  examples: |
+    - \bAR\d{6}\b

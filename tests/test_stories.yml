@@ -1,0 +1,59 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: Create a new sales order - shipTo, billTo
+  steps:
+  - user: |
+      Create a new sales order [shipped to]{"entity": "field", "value": "shipTo"} customer [12C1111](customer_id) and [billed to]{"entity": "field", "value": "billTo"} customer [81C8126](customer_id)
+    intent: create_sale_order
+  - action: action_build_url
+
+- story: Create a new action request - customer_id
+  steps:
+  - user: |
+      Create an action request for customer(contact_type) [10C1004](customer_id)
+    intent: create_action_request
+  - action: action_build_url
+
+- story: Open a sales order - sale_order_id
+  steps:
+  - user: |
+      Open sales order [SO684253](sale_order_id)
+    intent: read_sale_order
+  - action: action_build_url
+
+- story: Open a action request - action_request_id
+  steps:
+  - user: |
+      Open action request [AR184755](action_request_id)
+    intent: read_action_request
+  - action: action_build_url
+
+- story: Open a action request - crm account, customer_id
+  steps:
+  - user: |
+      Open action requests for [crm account]{"entity":"contact_type","value":"crm acco"} [44C2267](customer_id)
+    intent: read_action_request
+  - action: action_build_url
+
+- story: Update sales order - billTo
+  steps:
+  - user: |
+      Edit [bill to]{"entity": "field", "value": "billTo"} to [88C8888](customer_id) for sales order [SO111199](sale_order_id)
+    intent: update_sale_order
+  - action: action_build_url
+
+- story: Update action request - action_request_id
+  steps:
+  - user: |
+      Edit action request [AR422318](action_request_id)
+    intent: update_action_request
+  - action: action_build_url
+
+- story: Update action request - customer_id, action_request_id
+  steps:
+  - user: |
+      Change the customer to [44C2211](customer_id) on action request [AR679988](action_request_id)
+    intent: update_action_request
+  - action: action_build_url

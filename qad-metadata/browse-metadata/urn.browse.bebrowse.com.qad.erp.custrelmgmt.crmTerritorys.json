@@ -1,0 +1,484 @@
+{
+    "pluginName": "qad-qracore",
+    "viewSchema": {
+        "entityCode": "CrmTerritorys",
+        "entityDesc": "Territory",
+        "title": null,
+        "keyFields": "crmTerritory.domainCode,crmTerritory.crmTerritoryCode",
+        "keyFieldsJson": "crmTerritory.domainCode,crmTerritory.crmTerritoryCode",
+        "fields": [
+            {
+                "name": "crmTerritory.crmTerritoryCode",
+                "label": "Territory",
+                "entityFieldCode": "crmTerritory.crmTerritoryCode",
+                "type": "STRING",
+                "format": "x(20)",
+                "valueList": null,
+                "browseSearchOperatorList": [
+                    {
+                        "operator": "EQUALS"
+                    },
+                    {
+                        "operator": "GREATER_THAN"
+                    },
+                    {
+                        "operator": "GREATER_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "IS_NOT_NULL"
+                    },
+                    {
+                        "operator": "IS_NULL"
+                    },
+                    {
+                        "operator": "LESS_THAN"
+                    },
+                    {
+                        "operator": "LESS_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "NOT_EQUALS"
+                    },
+                    {
+                        "operator": "RANGE"
+                    },
+                    {
+                        "operator": "CONTAINS"
+                    },
+                    {
+                        "operator": "STARTS_WITH"
+                    },
+                    {
+                        "operator": "ENDS_WITH"
+                    }
+                ],
+                "browseSearchVariableList": null,
+                "lookup": null,
+                "lookupSearchField": null,
+                "lookupResultField": null,
+                "lookupSearchConditions": [],
+                "isVisible": true,
+                "browseDynamicSearchVarList": null,
+                "isHidden": false,
+                "isUserHidden": false,
+                "isBLHidden": false,
+                "isSecurityHidden": false,
+                "isRequired": true,
+                "isReadOnly": false,
+                "isSecurityReadOnly": false,
+                "isSortable": true,
+                "isSearchable": true,
+                "hideFieldData": false,
+                "linkUrl": null,
+                "styleName": null,
+                "styleRules": [],
+                "width": -1,
+                "isDefaultResultField": false,
+                "isDefaultSearchField": false,
+                "maxLength": 32,
+                "lookupInformations": [],
+                "lookupGuid": "c73b4774-b902-4c60-bfc0-e17ace30ce6f",
+                "fieldURI": "",
+                "defaultValue": null,
+                "currencyField": null,
+                "isLocked": false
+            },
+            {
+                "name": "crmTerritory.territoryDescription",
+                "label": "Description",
+                "entityFieldCode": "crmTerritory.territoryDescription",
+                "type": "STRING",
+                "format": "x(40)",
+                "valueList": null,
+                "browseSearchOperatorList": [
+                    {
+                        "operator": "EQUALS"
+                    },
+                    {
+                        "operator": "GREATER_THAN"
+                    },
+                    {
+                        "operator": "GREATER_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "IS_NOT_NULL"
+                    },
+                    {
+                        "operator": "IS_NULL"
+                    },
+                    {
+                        "operator": "LESS_THAN"
+                    },
+                    {
+                        "operator": "LESS_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "NOT_EQUALS"
+                    },
+                    {
+                        "operator": "RANGE"
+                    },
+                    {
+                        "operator": "CONTAINS"
+                    },
+                    {
+                        "operator": "STARTS_WITH"
+                    },
+                    {
+                        "operator": "ENDS_WITH"
+                    }
+                ],
+                "browseSearchVariableList": null,
+                "lookup": null,
+                "lookupSearchField": null,
+                "lookupResultField": null,
+                "lookupSearchConditions": [],
+                "isVisible": true,
+                "browseDynamicSearchVarList": null,
+                "isHidden": false,
+                "isUserHidden": false,
+                "isBLHidden": false,
+                "isSecurityHidden": false,
+                "isRequired": false,
+                "isReadOnly": false,
+                "isSecurityReadOnly": false,
+                "isSortable": false,
+                "isSearchable": true,
+                "hideFieldData": false,
+                "linkUrl": null,
+                "styleName": null,
+                "styleRules": [],
+                "width": -1,
+                "isDefaultResultField": false,
+                "isDefaultSearchField": false,
+                "maxLength": 128,
+                "lookupInformations": [],
+                "lookupGuid": "c8f80002-8126-410e-931c-764bcbfce63c",
+                "fieldURI": "",
+                "defaultValue": null,
+                "currencyField": null,
+                "isLocked": false
+            },
+            {
+                "name": "crmTerritory.isActive",
+                "label": "Active",
+                "entityFieldCode": "crmTerritory.isActive",
+                "type": "BOOLEAN",
+                "format": "Yes/No",
+                "valueList": null,
+                "browseSearchOperatorList": [
+                    {
+                        "operator": "EQUALS"
+                    },
+                    {
+                        "operator": "IS_NOT_NULL"
+                    },
+                    {
+                        "operator": "IS_NULL"
+                    },
+                    {
+                        "operator": "NOT_EQUALS"
+                    }
+                ],
+                "browseSearchVariableList": null,
+                "lookup": null,
+                "lookupSearchField": null,
+                "lookupResultField": null,
+                "lookupSearchConditions": [],
+                "isVisible": true,
+                "browseDynamicSearchVarList": null,
+                "isHidden": false,
+                "isUserHidden": false,
+                "isBLHidden": false,
+                "isSecurityHidden": false,
+                "isRequired": false,
+                "isReadOnly": false,
+                "isSecurityReadOnly": false,
+                "isSortable": false,
+                "isSearchable": true,
+                "hideFieldData": false,
+                "linkUrl": null,
+                "styleName": null,
+                "styleRules": [],
+                "width": -1,
+                "isDefaultResultField": false,
+                "isDefaultSearchField": false,
+                "maxLength": 0,
+                "lookupInformations": [],
+                "lookupGuid": "d58e3a29-2755-41fe-9ab2-a4d8712d387b",
+                "fieldURI": "",
+                "defaultValue": null,
+                "currencyField": null,
+                "isLocked": false
+            },
+            {
+                "name": "crmTerritory.territoryType",
+                "label": "Type",
+                "entityFieldCode": "crmTerritory.territoryType",
+                "type": "STRING",
+                "format": "x(20)",
+                "valueList": null,
+                "browseSearchOperatorList": [
+                    {
+                        "operator": "EQUALS"
+                    },
+                    {
+                        "operator": "GREATER_THAN"
+                    },
+                    {
+                        "operator": "GREATER_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "IS_NOT_NULL"
+                    },
+                    {
+                        "operator": "IS_NULL"
+                    },
+                    {
+                        "operator": "LESS_THAN"
+                    },
+                    {
+                        "operator": "LESS_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "NOT_EQUALS"
+                    },
+                    {
+                        "operator": "RANGE"
+                    },
+                    {
+                        "operator": "CONTAINS"
+                    },
+                    {
+                        "operator": "STARTS_WITH"
+                    },
+                    {
+                        "operator": "ENDS_WITH"
+                    }
+                ],
+                "browseSearchVariableList": null,
+                "lookup": null,
+                "lookupSearchField": null,
+                "lookupResultField": null,
+                "lookupSearchConditions": [],
+                "isVisible": true,
+                "browseDynamicSearchVarList": null,
+                "isHidden": false,
+                "isUserHidden": false,
+                "isBLHidden": false,
+                "isSecurityHidden": false,
+                "isRequired": false,
+                "isReadOnly": false,
+                "isSecurityReadOnly": false,
+                "isSortable": false,
+                "isSearchable": true,
+                "hideFieldData": false,
+                "linkUrl": null,
+                "styleName": null,
+                "styleRules": [],
+                "width": -1,
+                "isDefaultResultField": false,
+                "isDefaultSearchField": false,
+                "maxLength": 20,
+                "lookupInformations": [],
+                "lookupGuid": "02b995b7-74d1-4700-ab03-2798e225b6ad",
+                "fieldURI": "",
+                "defaultValue": null,
+                "currencyField": null,
+                "isLocked": false
+            },
+            {
+                "name": "crmTerritory.parentCode",
+                "label": "Parent",
+                "entityFieldCode": "crmTerritory.parentCode",
+                "type": "STRING",
+                "format": "x(20)",
+                "valueList": null,
+                "browseSearchOperatorList": [
+                    {
+                        "operator": "EQUALS"
+                    },
+                    {
+                        "operator": "GREATER_THAN"
+                    },
+                    {
+                        "operator": "GREATER_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "IS_NOT_NULL"
+                    },
+                    {
+                        "operator": "IS_NULL"
+                    },
+                    {
+                        "operator": "LESS_THAN"
+                    },
+                    {
+                        "operator": "LESS_THAN_EQUALS"
+                    },
+                    {
+                        "operator": "NOT_EQUALS"
+                    },
+                    {
+                        "operator": "RANGE"
+                    },
+                    {
+                        "operator": "CONTAINS"
+                    },
+                    {
+                        "operator": "STARTS_WITH"
+                    },
+                    {
+                        "operator": "ENDS_WITH"
+                    }
+                ],
+                "browseSearchVariableList": null,
+                "lookup": null,
+                "lookupSearchField": null,
+                "lookupResultField": null,
+                "lookupSearchConditions": [],
+                "isVisible": true,
+                "browseDynamicSearchVarList": null,
+                "isHidden": false,
+                "isUserHidden": false,
+                "isBLHidden": false,
+                "isSecurityHidden": false,
+                "isRequired": false,
+                "isReadOnly": false,
+                "isSecurityReadOnly": false,
+                "isSortable": false,
+                "isSearchable": true,
+                "hideFieldData": false,
+                "linkUrl": null,
+                "styleName": null,
+                "styleRules": [],
+                "width": -1,
+                "isDefaultResultField": false,
+                "isDefaultSearchField": false,
+                "maxLength": 0,
+                "lookupInformations": [],
+                "lookupGuid": "203d13cc-7a17-4c03-b3d9-9e04011b0245",
+                "fieldURI": "",
+                "defaultValue": null,
+                "currencyField": null,
+                "isLocked": false
+            },
+            {
+                "name": "crmTerritory.domainCode",
+                "label": "Domain",
+                "entityFieldCode": "crmTerritory.domainCode",
+                "type": "STRING",
+                "format": "x(8)",
+                "valueList": null,
+                "browseSearchOperatorList": null,
+                "browseSearchVariableList": null,
+                "lookup": null,
+                "lookupSearchField": null,
+                "lookupResultField": null,
+                "lookupSearchConditions": [],
+                "isVisible": false,
+                "browseDynamicSearchVarList": null,
+                "isHidden": false,
+                "isUserHidden": false,
+                "isBLHidden": false,
+                "isSecurityHidden": false,
+                "isRequired": true,
+                "isReadOnly": false,
+                "isSecurityReadOnly": false,
+                "isSortable": true,
+                "isSearchable": false,
+                "hideFieldData": false,
+                "linkUrl": null,
+                "styleName": null,
+                "styleRules": [],
+                "width": -1,
+                "isDefaultResultField": false,
+                "isDefaultSearchField": false,
+                "maxLength": 0,
+                "lookupInformations": [],
+                "lookupGuid": "56604dc2-deec-4729-a81a-9d75acc27d34",
+                "fieldURI": "",
+                "defaultValue": null,
+                "currencyField": null,
+                "isLocked": false
+            }
+        ],
+        "gridSettings": {
+            "viewAs": "Grid",
+            "allowMultiChild": false,
+            "canPage": true,
+            "canSort": true,
+            "canFilter": true,
+            "canGroup": false,
+            "canCreate": false,
+            "canMultiSelect": false,
+            "canEdit": false,
+            "canDelete": false,
+            "canResize": true,
+            "canReorder": true,
+            "canMultiRowSelect": false,
+            "isReadOnly": true,
+            "isUserHidden": false,
+            "isBLHidden": false,
+            "isSecurityHidden": false,
+            "isRecursive": false,
+            "maxRecursiveLevels": 0,
+            "pageSize": 25,
+            "defaultDesktopPageSize": 25,
+            "pageSizeList": "1,10,25,50,100,500,1000,2000",
+            "mobilePageSize": 10,
+            "sortConditions": [],
+            "groups": null,
+            "aggregates": null,
+            "filterConditions": null,
+            "rowEditMode": "MultiRowEdit",
+            "height": "100%",
+            "minimumRows": null,
+            "maximumRows": null,
+            "alwaysRefresh": false,
+            "selectionColumn": "",
+            "maxIndentLevel": 35,
+            "showLevelAlways": false,
+            "showLevelAtMaxIndent": true,
+            "autoLaunchDetails": false,
+            "autoLaunchDetailsPreselectMap": {},
+            "allowTreeDragDrop": null,
+            "isAllowExport": null,
+            "editSelectedOnly": true
+        },
+        "jsonTableName": "crmTerritorys",
+        "entityTableCode": "CrmTerritory",
+        "childDataGridViewMetadata": null,
+        "label": null,
+        "extensionsMetadata": null
+    },
+    "dataWiring": {
+        "type": "GridDataWiring",
+        "gridName": "BrowseDataGrid",
+        "listBaseUrl": "/qad-central/api/qracore/browses?browseId=urn:browse:bebrowse:com.qad.erp.custrelmgmt.crmTerritorys",
+        "associatedHybridView": {
+            "hybridViewUri": null,
+            "entityUri": null,
+            "serviceProvider": null,
+            "allowDrills": true,
+            "allowActivity": true,
+            "allowAttachments": true
+        }
+    },
+    "mobileCompatibility": "BROWSEONLY",
+    "browseDrillDowns": [],
+    "storedViewData": {
+        "storedViewMetadata": null,
+        "viewDisplayName": "Default View",
+        "viewIdentifier": "urn:browse:bebrowse:com.qad.erp.custrelmgmt.crmTerritorys|DefaultView",
+        "level": "SYSTEM",
+        "storedViewUri": "urn:browse:bebrowse:com.qad.erp.custrelmgmt.crmTerritorys",
+        "userId": null,
+        "domains": null,
+        "isDefault": false,
+        "isQADStandard": false,
+        "isMobile": null,
+        "appUri": "",
+        "unEscapedViewDisplayName": "Default View"
+    }
+}

@@ -1,0 +1,51 @@
+version: "2.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+
+intents:
+  - create_action_request
+  - create_sale_order
+  - read_action_request
+  - read_inventory_detail
+  - read_sale_order
+  - update_action_request
+  - update_inventory_detail
+  - update_sale_order
+  - delete_action_request
+  - delete_sale_order
+
+entities:
+  - action_request_id
+  - contact_type
+  - customer_id
+  - field
+  - number
+  - sale_order_id
+  - time
+
+slots:
+  action_request_id:
+    type: text
+    influence_conversation: false
+  contact_type:
+    type: text
+    influence_conversation: false
+  customer_id:
+    type: list
+    influence_conversation: false
+  field:
+    type: list
+    influence_conversation: false
+  number:
+    type: text
+    influence_conversation: false
+  sale_order_id:
+    type: text
+    influence_conversation: false
+  time:
+    type: any
+
+actions:
+  - action_build_url

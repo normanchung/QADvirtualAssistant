@@ -1,0 +1,18 @@
+version: "2.0"
+stories:
+- story: Update sales order - billTo (/var/folders/x9/1njv_t0518l7xj8gvh95_dz00000gn/T/tmpnhd2pll_/d826e1ac6e464717915cccbf0f1b4511_test_stories.yml)
+  steps:
+  - intent: update_sale_order  # predicted: update_sale_order: Edit [bill to to](field) [88C8888](customer_id) for sales order [SO111199](sale_order_id)
+    entities:
+    - field: billTo
+    - customer_id: 88C8888
+    - sale_order_id: SO111199
+  - slot_was_set:
+    - customer_id:
+      - 88C8888
+  - slot_was_set:
+    - field:
+      - billTo
+  - slot_was_set:
+    - sale_order_id: SO111199
+  - action: action_build_url

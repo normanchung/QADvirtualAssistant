@@ -1,0 +1,31 @@
+version: '3.0'
+
+services:
+  duckling:
+    image: rasa/duckling:latest
+    ports:
+    - "8000:8000"
+
+  rasa:
+    container_name: "rasa_server"
+    build:
+      context: .
+    ports:
+    - "5005:5005"
+  
+  action_server:
+    container_name: "action_server"
+    build:
+      context: actions
+    volumes:
+      - ./actions:/app/actions
+    ports:
+    - "5055:5055"
+  
+  assistant_ui:
+    container_name: "asssistant_ui"
+    build:
+      context: front
+    ports:
+    - "3000:3000"
+  

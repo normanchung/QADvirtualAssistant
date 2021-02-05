@@ -1,0 +1,9 @@
+venv/
+.vscode/
+**/__pycache__/
+**/node_modules/
+.DS_Store
+events.db
+rasa.db
+rasa.db-shm
+rasa.db-wal

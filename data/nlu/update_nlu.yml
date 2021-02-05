@@ -1,0 +1,42 @@
+version: "2.0"
+
+nlu:
+- intent: update_action_request
+  examples: |
+    - Change action request [AR182736](action_request_id)
+    - Update action request [AR192732](action_request_id)
+    - Update action request
+    - Change action request [AR000006](action_request_id)
+    - Alter action request [AR999999](action_request_id)
+    - Edit action request [AR463721](action_request_id)
+    - Edit action request [AR433331](action_request_id)
+    - Edit action request [AR111111](action_request_id)
+    - Edit action request
+    - Edit customer to [19C0000](customer_id) for action request [AR883921](action_request_id)
+    - Change the customer to [23C1928](customer_id) on action request [AR123123](action_request_id)
+    - Change the customer to [12C1111](customer_id) on action request [AR293838](action_request_id)
+    - Update customer to [11C8877](customer_id) for action request [AR4433523](action_request_id)
+
+- intent: update_inventory_detail
+  examples: |
+    - Edit inventory detail
+    - Edit inventory detail for [item](field) [01010](number)
+    - Update inventory detail
+    - Change inventory detail for [item](field) [03011](number)
+    - Update inventory detail for [item](field) [03011](number)
+    - Change inventory detail for [01010](number)
+    - Alter inventory detail
+    - Alter the inventory detail for [item](field) [01010](number)
+    - Make changes to inventory detail for [03011](number)
+
+- intent: update_sale_order
+  examples: |
+    - Change [ship-to](field) to [10C1001A](customer_id) on sales order [SO051904](sale_order_id)
+    - Edit sales order [SO928372](sale_order_id)
+    - Edit [bill to](field) to [88C8888](customer_id) for sales order [SO111199](sale_order_id)
+    - Change [sold to](field) to [22C2929](customer_id) for sales order [SO111199](sale_order_id)
+    - On sales order [SO333333](sale_order_id), update the [ship to](field) to [44C4545](customer_id)
+    - Update sales order [SO827192](sale_order_id)
+    - Change sales order [SO918271](sale_order_id)
+    - Update the customer on sales order [SO102345](sale_order_id) to [19C3772](customer_id)
+    - Change a sales order

@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Change inventory detail for item 03011",
+    "intent": "update_inventory_detail",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  }
+]

@@ -1,0 +1,38 @@
+version: "2.0"
+
+nlu:
+- intent: create_action_request
+  examples: |
+    - Create a new action request for [customer](contact_type) [10C1003](customer_id)
+    - Create action request for [customer](contact_type) [31C9239](customer_id)
+    - Create action request
+    - Make a new action request
+    - New action request
+    - Create an action request for [10C1004](customer_id)
+    - Start a new action request for [crm account](contact_type) [12C1223](customer_id)
+    - Create an action request for [salesperson](contact_type) [12C1000](customer_id)
+    - For [engineer](contact_type) [12C1111](customer_id), create a new action request
+    - Make a new action request for [supplier](contact_type) [11C1111](customer_id)
+    - New action request for [employee](contact_type) [99C9999](customer_id)
+    - New action request for [end user](contact_type) [65C6565](customer_id)
+
+- intent: create_sale_order
+  examples: |
+    - Create a new sales order for customer [12C1000](customer_id)
+    - Create a new sales order
+    - Start sales order
+    - New sales order
+    - Make a new sales order
+    - Create a sales order [sold to](field) [31C1003](customer_id)
+    - Create a sales order [billed to](field) [20C1002](customer_id)
+    - Make a sales order [billed to](field) [12C3873](customer_id)
+    - Create a sales order to [ship to](field) [12C1002A](customer_id)
+    - Create a sales order [shipping to](field) [12C1002A](customer_id)
+    - Create a sales order for [10C1004](customer_id)
+    - Create a sales order for customer [10C1004](customer_id)
+    - Create a sales order [sold to](field) [19C1191](customer_id)
+    - Make a new sales order for customer [29C1111](customer_id)
+    - Start a sales order for customer [99C9999](customer_id)
+    - Create a sales order for [billing to](field) customer [10C0000](customer_id)
+    - Create a sales order for [billing to](field) customer [12C1111](customer_id) and [shipping to](field) customer [81C8126](customer_id)
+    - New sales order for [shipping to](field) customer [34C0000A](customer_id)
